@@ -429,6 +429,7 @@ h2{
   margin-bottom:48px;
 }
 
+/* MOBILE ADJUSTMENT */ 
 @media (max-width: 768px){
 
   /* ===== GENERAL ===== */
@@ -437,64 +438,70 @@ h2{
   }
 
   h1{
-    font-size: 48px;
+    font-size: 44px;
     text-align: center;
   }
 
   h2{
-    font-size: 40px;
+    font-size: 38px;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   p{
     text-align: center;
   }
 
-  /* ===== HEADER ===== */
+  /* ===== HEADER (2 líneas, nada cortado) ===== */
   header{
-    height: 80px;
+    height: auto;
+    padding: 12px 0;
   }
 
   .nav{
-    padding: 0 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0 12px;
   }
 
   .nav span{
     font-size: 20px;
-    white-space: nowrap;     /* evita salto de línea */
+    font-weight: 600;
+    white-space: normal;
+    text-align: center;
   }
 
   .nav-links{
-    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
   }
 
   .nav a{
     font-size: 14px;
+    padding: 4px 0;
   }
 
   /* ===== HERO ===== */
   .hero{
-    padding-top: 80px;
+    padding-top: 140px; /* deja espacio al header en 2 líneas */
   }
 
   .hero-container{
     flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 24px;
-  }
-
-  .hero-text{
-    flex: none;
+    text-align: center;
   }
 
   .hero-text p.intro{
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .hero-text p.position{
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .hero-buttons{
@@ -502,23 +509,23 @@ h2{
   }
 
   .hero-image{
-    margin-top: 24px;
+    margin-top: 20px;
     transform: none !important;
   }
 
-  /* ===== STATS / KPIs ===== */
+  /* ===== STATS ===== */
   .stats{
-    gap: 24px;
-    margin-top: 32px;
+    gap: 22px;
+    margin-top: 28px;
     margin-bottom: 32px;
   }
 
   .stat-number{
-    font-size: 34px;
+    font-size: 32px;
   }
 
   .stat-label{
-    font-size: 15px;
+    font-size: 14px;
   }
 
   /* ===== EXPERIENCE ===== */
@@ -541,46 +548,52 @@ h2{
   .project-card{
     flex: 1 1 100%;
     max-width: 100%;
-    padding: 28px;
+    padding: 26px;
   }
 
   .project-title{
     text-align: center;
   }
 
-  /* ===== CONTACT ===== */
+  /* ===== CONTACT (MUCHO MÁS COMPACTO) ===== */
   #contact{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 
   .contact-phrase{
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 17px;
+    margin-bottom: 16px;
   }
 
   .contact-container{
     flex-direction: column;
-    gap: 18px;
+    gap: 10px;        /* 🔴 clave: reduce espacio */
     margin-top: 0;
   }
 
+  .contact-item{
+    transform: none;
+  }
+
   .contact-label{
-    font-size: 13px;
-    margin-bottom: 4px;
+    font-size: 12px;
+    margin-bottom: 2px;
   }
 
   .contact-value a,
   .contact-value{
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 1.3;
   }
 
   /* ===== FOOTER ===== */
   footer{
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
+
 
 </style>
 </head>
