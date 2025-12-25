@@ -430,6 +430,7 @@ h2{
 }
 
 /* MOBILE ADJUSTMENT */
+/* MOBILE ADJUSTMENT */
 @media(max-width:768px){
   /* HEADER - Ajuste mejorado para móvil */
   header{
@@ -437,7 +438,7 @@ h2{
     top: 0;
     left: 0;
     right: 0;
-    height: auto !important; /* Forzar altura automática */
+    height: auto !important;
     min-height: 80px;
     background: rgba(255,255,255,0.95);
     backdrop-filter: saturate(180%) blur(20px);
@@ -446,20 +447,20 @@ h2{
     z-index: 999;
     padding: 12px 16px;
   }
-  
+
   .nav{
     flex-direction: column;
     align-items: center;
     gap: 10px;
     padding: 0;
   }
-  
+
   .nav span{
     font-size: 20px;
     font-weight: 600;
     text-align: center;
   }
-  
+
   .nav-links{
     display: flex;
     flex-wrap: wrap;
@@ -467,7 +468,7 @@ h2{
     gap: 14px;
     padding-bottom: 8px;
   }
-  
+
   .nav a{
     font-size: 14px;
     color: var(--muted);
@@ -478,64 +479,68 @@ h2{
     padding-top: 160px;
     min-height: 70vh;
   }
-  
+
   /* Resto de ajustes móvil */
   .hero-container{
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
-  
+
   .hero-text h1{
-    font-size: 42px;
+    font-size: 56px; /* Más grande */
     text-align: center;
   }
-  
+
   .hero-text p.intro,
   .hero-text p.position{
     text-align: center;
   }
-  
+
   .hero-image{
     flex: 1 1 auto;
     margin-top: 20px;
   }
-  
+
+  .hero-image img{
+    max-width: 250px; /* Foto más pequeña */
+  }
+
   .hero-buttons{
     justify-content: center;
   }
-  
+
   h2{
     font-size: 36px;
     text-align: center;
     margin-bottom: 24px;
   }
-  
+
   .stats{
     gap: 30px;
     margin-bottom: 30px;
   }
-  
+
   .contact-container{
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 24px; /* Reducido de 12px a 24px para menos espacio */
     margin-top: 20px;
     margin-bottom: 40px;
   }
-  
+
   .contact-item{
-    margin-bottom: 10px;
+    margin-bottom: 0; /* Eliminado espacio extra */
     text-align: center;
   }
-  
+
   .experience-carousel{
     justify-content: flex-start;
     gap: 16px;
   }
 }
 
-
+  
 
 </style>
 </head>
